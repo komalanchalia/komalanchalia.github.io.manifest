@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "WeBook",
+  "description": "An extension to summarize YouTube videos using the transcript.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "tabs",
+    "storage",
+    "http://*",
+    "https://*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://127.0.0.1:5000/"
+  ],
+  "action": {
+    "default_title": "WeBook",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+
+}
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WeBook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="tools">
+            <div class="circle">
+                <span class="red box"></span>
+              </div>
+              <div class="circle">
+                <span class="yellow box"></span>
+              </div>
+              <div class="circle">
+                <span class="green box"></span>
+              </div>
+        </div>
+        <div class="card__content">
+            <div class="container">
+                <div class="title">
+                  <h1 class="title">WeBook</h1>
+                </div>
+                <div class="description">
+                    <p>
+                        WeBook enhances the YouTube experience by allowing users to choose between two summarization algorithms. With the help of this extension, users can quickly obtain a summary of the video they are watching.    
+                    </p>
+                </div>
+
+                <form id="summarizeForm">
+                  <button class="cta" type="submit">
+                      <span>Summarize</span>
+                      <svg viewBox="0 0 13 10" height="100px" width="150px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                      </svg>
+                  </button>
+                  <div class="toggle">
+                    <label class="switch">
+                      <input type="checkbox" id="toggleSwitch">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </form>
+
+                <div id="resultContainer" style="display: none;">
+                  <div id="summary"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="background.js"></script>
+</body>
+</html>
